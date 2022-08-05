@@ -1,4 +1,3 @@
-@import url();
 * {
   box-sizing: border-box;
   margin: 0;
@@ -10,40 +9,74 @@ body {
   height: 100vh;
 }
 .slider-container {
-  /* overflow: hidden; */
+  overflow: hidden;
   display: flex;
   height: 100vh;
   width: 100vw;
 }
+.left-slider {
+  width: 35%;
+  height: 100%;
+}
 
 .left-slider > div {
-  width: 33%;
+  width: 100%;
   height: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  clear: white;
+  color: white;
 }
-.left-slider h1{
- font-size: 2.5rem;
- margin-bottom: 1rem;
+.left-slider h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
 }
-.right-slider{
-    height: 100%;
-    width: 65%;
-    background-repeat: no-repeat;
-    background-position: ;
+
+.right-slider {
+  height: 100%;
+  width: 65%;
 }
-.ehgle-img {
-  background-image: url("");
+.egle-img {
+  background-image: url("img/eagle.jpeg");
 }
-.ehgle-img {
-  background-image: url("");
+.flower-img {
+  background-image: url("./img/flower.jpeg");
 }
-.ehgle-img {
-  background-image: url("");
+.castle-img {
+  background-image: url("img/castle.jpeg");
 }
-.ehgle-img {
-  background-image: url("");
+.mountain-img {
+  background-image: url("img/mountains.jpeg");
+}
+
+.right-slider > div {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+button {
+  background-color: rgb(255, 199, 199);
+  cursor: pointer;
+  color: #aaaaaa;
+  border: none;
+  font-size: 1rem;
+  padding: 1rem;
+}
+.slider-container .action-buttons button {
+  position: absolute;
+  left: 35%;
+  top: 50%;
+}
+.slider-container .action-buttons .down-button {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  transform: translateX(-100%);
+}
+.slider-container .action-buttons .up-button {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  transform: translateY(-100%);
 }
